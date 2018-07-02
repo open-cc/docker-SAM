@@ -1,0 +1,8 @@
+version: '3'
+services:
+  sam:
+    image: open-cc/sam
+    build: ./
+    volumes:
+      - "./output:/output"
+    command: "-wav /output/i_am_sam.wav I am Sam"
