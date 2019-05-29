@@ -5,4 +5,4 @@ services:
     build: ./
     volumes:
       - "./output:/output"
-    command: "-wav /output/i_am_sam.wav I am Sam"
+    command: "-wav /output/test.wav hello world"
