@@ -14,6 +14,4 @@ RUN sed -i "1s/^/#define __GLIBC__ 0\n/" ./SAM/src/main.c
 
 RUN cd SAM && make
 
-#CMD ["/bin/sh", "-c",  "while true; do sleep 1; done"]
-
 ENTRYPOINT ["./SAM/sam", "${@}"]
